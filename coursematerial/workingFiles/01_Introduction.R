@@ -1,6 +1,6 @@
 # Demo 1.1 ####
 getwd()
-rm(list=ls()) 
+ 
 #Working directory is where a project is based
 
 # 1.2 Introduction to R ####
@@ -9,10 +9,16 @@ rm(list=ls())
 (8*4)^2
 x = (8*4)^2
 x
+y=81
+z<-765
+#shortcut for allocation -ALT--
+p<-32
 print(x)
-
-# 1.2.2 Assigning values and datatypes in R ####
-# 1.2.2.1 Vectors ####
+x*y
+15<-199
+15==199
+islinathesameasnana<-"lina"=="nana"
+rm(list=ls())
 quantity <- c(12,43,64,87,98,12,23,67,12,34,21) # c=concatenate into a vector; use = or <- (ALT -) to assign in R
 quantity
 class(quantity)
@@ -50,6 +56,7 @@ sum(test1) + sum(test2)
 
 # what happens when these vectors are not the same length
 length(test1)
+
 length(test2)
 length(test1) == length(test2) # compare using double ==
 #add a new value to test1
@@ -176,6 +183,7 @@ summary(wahid_species)
 # extracting rows and columns as above
 #6th row
 wahid_species[6,]
+
 (totalCases <- wahid_species[,"totalNcase"]) #this turns this specific dataset into a vector
 #except now we can use the $ sign to indicate column names
 wahid_species$totalNcase
